@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/css/fonts.css" media="screen">
+  <link rel="stylesheet" href="/static/css/create.css" media="screen">
+  <title>{{title}}</title>
+</head>
+<body>
+  <header class="header">
+    <div class="wrapper">
+      <div class="header__wrapper">
+        <div class="header__logo">
+          <a href="/" class="header__logo-link">
+            <img src="/static/img/logo.svg" alt="Interns" class="header__logo-pic">
+          </a>
+        </div>
+  
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="biography" class="header__link">О себе</a>
+            </li>
+            <li class="header__item">
+              <a href="experience" class="header__link">Опыт</a>
+            </li>
+            <li class="header__item">
+              <a href="reviews" class="header__link">Истории</a>
+            </li>
+            <li class="header__item">
+              <a href="create" class="header__link">
+                <button type="button" class="btn__enter btn__enter-color">Создать</button>
+              </a>
+            </li>
+            <li class="header__item">
+              <button id="open-modal-btn" type="button" class="btn__registration button btn__registration-color">Регистрация</button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <div class="modal" id="my-modal">
+    <div class="modal__box">
+      <form class="modal__form" method="post">
+        <h1 align="center">Регистрация</h1>
+        <input class="modal__input" type="text" id="text" placeholder="Имя пользователя">
+        <input class="modal__input" type="email" id="email" placeholder="Электронная почта">
+        <input class="modal__input" type="tel" id="tel" placeholder="Номер телефона">
+        <input class="modal__input" type="password" id="password" placeholder="Пароль">
+        <button class="modal__btn modal__btn-color" type="submit">Зарегистрироваться</button>
+        <p>
+          Уже есть аккаунт?
+          <a href="enter">Войдите!</a>
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <section class="main__section">
+    <div class="wrapper">
+      <h1 align="center">Добавление истории</h1>
+      <form method="post">
+        <input type="text" name="title" id="title" class="form-control" placeholder="Введите название">
+        <br>
+        <textarea name="intro" id="intro" class="form-control" placeholder="Введите анонс"></textarea>
+        <br>
+        <textarea name="text" id="text" class="form-control" placeholder="Введите основной текст"></textarea>
+        <br>
+        <input type="submit" value="Отправить" class="btn__input btn__input-color">
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer__image">
+        <img src="/static/img/footer.svg" alt="">
+      </div>
+    </div>
+  </footer>
+  <script defer src="/static/js/script.js"></script>
+</body>
+</html>

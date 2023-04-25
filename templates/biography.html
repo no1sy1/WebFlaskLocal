@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/css/fonts.css" media="screen">
+  <link rel="stylesheet" href="/static/css/biography.css" media="screen">
+  <title>{{title}}</title>
+</head>
+<body>
+  <header class="header">
+    <div class="wrapper">
+      <div class="header__wrapper">
+        <div class="header__logo">
+          <a href="/" class="header__logo-link">
+            <img src="/static/img/logo.svg" alt="Interns" class="header__logo-pic">
+          </a>
+        </div>
+  
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="biography" class="header__link">О себе</a>
+            </li>
+            <li class="header__item">
+              <a href="experience" class="header__link">Опыт</a>
+            </li>
+            <li class="header__item">
+              <a href="reviews" class="header__link">Истории</a>
+            </li>
+            <li class="header__item">
+              <a href="create" class="header__link">
+                <button type="button" class="btn__enter btn__enter-color">Создать</button>
+              </a>
+            </li>
+            <li class="header__item">
+              <button id="open-modal-btn" type="button" class="btn__registration button btn__registration-color">Регистрация</button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <div class="modal" id="my-modal">
+    <div class="modal__box">
+      <form class="modal__form" method="post">
+        <h1 align="center">Регистрация</h1>
+        <input class="modal__input" type="text" id="text" placeholder="Имя пользователя">
+        <input class="modal__input" type="email" id="email" placeholder="Электронная почта">
+        <input class="modal__input" type="tel" id="tel" placeholder="Номер телефона">
+        <input class="modal__input" type="password" id="password" placeholder="Пароль">
+        <button class="modal__btn modal__btn-color" type="submit">Зарегистрироваться</button>
+        <p>
+          Уже есть аккаунт?
+          <a href="enter">Войдите!</a>
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <section class="main__section">
+    <div class="wrapper">
+      <div class="main__wrapper">
+        <div class="main__img-me">
+          <p>
+            <img src="/static/img/me.jpg" alt="me">
+            <h1 class="main__title">Кто я?</h1>
+            <p class="main__subtitle">
+              Меня зовут Ильшат. Я ученик Яндекс лицея. На данном сайте, мне хотелось рассказать и поделиться историями из лагеря Байтик. Расскажу немного о лагере. Лагерь Байтик - это образовательный лагерь. В нем есть много направлений, например: программирование, робототехника и много другое.                        
+            </p>
+          </p>
+        </div>
+        <div class="main__ico">
+          <ul class="main__list">
+            <li class="main__item">
+              <a href="https://t.me/luckynoisy" target="_blank" class="main_link">
+                <img src="/static/img/telegram.png" alt="telegram">
+              </a>
+            </li>
+            <li class="main__item">
+              <a href="https://www.instagram.com/_noilove" target="_blank class="main_link">
+                <img src="/static/img/instagram.png" alt="instagram">
+              </a>
+            </li>
+            <li class="main__item">
+              <a href="https://vk.com/luckynoisy" target="_blank class="main_link">
+                <img src="/static/img/vk.png" alt="vk">
+              </a>
+            </li>
+            <li class="main__item">
+              <a href="https://goo.gl/maps/jWkAWyphhMWwkc189" target="_blank class="main_link">
+                <img src="/static/img/position.png" alt="position">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer__image">
+        <img src="/static/img/footer.svg" alt="">
+      </div>
+    </div>
+  </footer>
+  <script defer src="/static/js/script.js"></script>
+</body>
+</html>
